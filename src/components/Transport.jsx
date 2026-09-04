@@ -11,35 +11,32 @@ export default function Transport() {
 
   return (
     <div className="transport">
-      <div className="transport-buttons">
-        <button 
-          className="btn btn-play"
-          onClick={togglePlay}
-        >
-          {isPlaying ? '⏸ Pause' : '▶ Play'}
-        </button>
-        
-        <button 
-          className="btn btn-stop"
-          onClick={stop}
-        >
-          ⏹ Stop
-        </button>
-      </div>
+      <button 
+        className={`transport-btn play-btn ${isPlaying ? 'active' : ''}`}
+        onClick={togglePlay}
+        title="Play / Pause"
+      >
+        <span>{isPlaying ? '⏸' : '▶'}</span>
+      </button>
+      
+      <button 
+        className="transport-btn stop-btn"
+        onClick={stop}
+        title="Stop"
+      >
+        <span>⏹</span>
+      </button>
 
-      <div className="transport-tempo">
-        <label>Tempo (BPM)</label>
-        <div className="tempo-control">
-          <input
-            type="range"
-            min="40"
-            max="200"
-            value={tempo}
-            onChange={(e) => setTempo(Number(e.target.value))}
-            className="tempo-slider"
-          />
-          <span className="tempo-display">{tempo}</span>
-        </div>
+      <div className="tempo-display">
+        <label>BPM</label>
+        <input
+          type="number"
+          min="40"
+          max="200"
+          value={tempo}
+          onChange={(e) => setTempo(Number(e.target.value))}
+          className="tempo-input"
+        />
       </div>
     </div>
   )
