@@ -1,0 +1,116 @@
+.piano-section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a3e 0%, #2a2a5e 100%);
+  border: 1px solid #00d4ff;
+  border-radius: 4px;
+  overflow: hidden;
+  flex: 1;
+  box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.1);
+}
+
+.piano-header {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+  border-bottom: 2px solid #00d4ff;
+}
+
+.piano-header h3 {
+  margin: 0;
+  color: #00d4ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.piano-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.piano-keys {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+  border-right: 1px solid #00d4ff;
+  overflow-y: auto;
+}
+
+.piano-key-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+  border-bottom: 1px solid #2a2a5e;
+  min-height: 50px;
+  font-size: 11px;
+  color: #00d4ff;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+}
+
+.key-label {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.piano-tracks {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.piano-track {
+  display: flex;
+  border-bottom: 1px solid #2a2a5e;
+}
+
+.track-header-small {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  min-width: 80px;
+  background: linear-gradient(90deg, #1a1a3e 0%, #2a2a5e 100%);
+  font-size: 10px;
+  color: #00d4ff;
+  font-weight: 600;
+  border-right: 1px solid #00d4ff;
+  white-space: nowrap;
+}
+
+.notes-container {
+  display: flex;
+  flex: 1;
+  gap: 1px;
+  padding: 8px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+}
+
+.piano-note {
+  flex: 1;
+  min-height: 50px;
+  background: linear-gradient(135deg, #1a1a3e 0%, #2a2a5e 100%);
+  border: 1px solid #00d4ff;
+  color: #00ff88;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+}
+
+.piano-note:hover {
+  background: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
+  color: #0a0e27;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+  transform: scale(1.05);
+}
+
+.piano-note:active {
+  transform: scale(0.95);
+}
