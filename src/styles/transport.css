@@ -1,0 +1,74 @@
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 16px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.transport-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.transport-buttons .btn {
+  min-width: 120px;
+}
+
+.transport-tempo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transport-tempo label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.tempo-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a1a1a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #404040;
+}
+
+.tempo-slider {
+  width: 120px;
+  cursor: pointer;
+}
+
+.tempo-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #51cf66;
+  cursor: pointer;
+  border: 2px solid #2a2a2a;
+}
+
+.tempo-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #51cf66;
+  cursor: pointer;
+  border: 2px solid #2a2a2a;
+}
+
+.tempo-display {
+  font-size: 16px;
+  font-weight: 700;
+  color: #51cf66;
+  min-width: 40px;
+  text-align: center;
+}
