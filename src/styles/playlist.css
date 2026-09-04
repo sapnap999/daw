@@ -1,0 +1,128 @@
+.playlist {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a3e 0%, #2a2a5e 100%);
+  border: 1px solid #00d4ff;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 200px;
+  box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.1);
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+  border-bottom: 2px solid #00d4ff;
+}
+
+.playlist-header h3 {
+  margin: 0;
+  color: #00d4ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.timeline-info {
+  font-size: 11px;
+  color: #00ff88;
+  font-weight: 600;
+}
+
+.playlist-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.timeline-numbers {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 0;
+  padding: 0 10px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+  border-bottom: 1px solid #00d4ff;
+  border-right: 1px solid #00d4ff;
+  min-height: 30px;
+  align-items: center;
+}
+
+.timeline-step {
+  text-align: center;
+  font-size: 10px;
+  color: #00d4ff;
+  font-weight: 600;
+  padding: 4px 0;
+  border-right: 1px solid #2a2a5e;
+}
+
+.playlist-tracks {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.playlist-track {
+  display: flex;
+  border-bottom: 1px solid #2a2a5e;
+  min-height: 35px;
+}
+
+.track-name-small {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  min-width: 80px;
+  background: linear-gradient(90deg, #1a1a3e 0%, #2a2a5e 100%);
+  font-size: 10px;
+  color: #00d4ff;
+  font-weight: 600;
+  border-right: 1px solid #00d4ff;
+  white-space: nowrap;
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 0;
+  flex: 1;
+  padding: 4px;
+  background: linear-gradient(90deg, #0d0d1f 0%, #1a1a3e 100%);
+}
+
+.pattern-cell {
+  border: 1px solid #2a2a5e;
+  background: linear-gradient(135deg, #1a1a3e 0%, #2a2a5e 100%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  min-height: 25px;
+}
+
+.pattern-cell:hover {
+  background: linear-gradient(135deg, #2a2a5e 0%, #3a3a7e 100%);
+  border-color: #00d4ff;
+}
+
+.note-indicator {
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, #00d4ff, #00ff88);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+}
